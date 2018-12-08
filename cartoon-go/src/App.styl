@@ -1,0 +1,45 @@
+//Vars breakpoints
+desktop= 48em
+//vars cores
+azul-escuro= blue
+roxo= purple
+/*Reset*/
+*
+    box-sizing border-box
+    font-size 100%
+    line-height 1.2
+    margin 0
+    padding 0
+    a, a:hover
+        text-decoration none
+    li 
+        list-style-type none
+/*Buttons*/
+.bt
+    border-style solid
+    border-width 1px
+    border-radius 3em
+    box-shadow 1px 1px 6px 0 #333
+    color #fff
+    display inline-block
+    font-family sans-serif
+    margin-top 5px
+    padding 0.78 1em
+    &.bt-blue
+        background-color azul-escuro
+        border-color azul-escuro
+    &.bt-roxo
+        background-color roxo
+        border-color roxo
+/*grids*/
+.container, .container-fluid
+    margin 0 auto
+    width 99%    
+@media(min-width: desktop)
+    .container
+        width 90%
+.row
+    display flex
+    flex-direction column
+    @media(min-width: desktop)
+        flex-direction row
